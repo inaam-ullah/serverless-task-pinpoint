@@ -18,7 +18,7 @@ service: serverless-pinpoint-task
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
-frameworkVersion: '3'
+frameworkVersion: "3"
 
 provider:
   name: aws
@@ -59,8 +59,13 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  webhook_handler:
+    handler: handler.webhook_handler
+    events:
+      - httpApi:
+          path: /webhook
+          method: post
+
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
