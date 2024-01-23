@@ -13,3 +13,10 @@
 
    ```bash
    npm install -g serverless
+   ```
+## Create a New Serverless Project:
+
+```bash
+serverless create --template aws-ruby --path my_serverless_project
+```
+**Note:** Add path according to the Requirements
