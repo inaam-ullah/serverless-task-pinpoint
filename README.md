@@ -3,7 +3,13 @@
 
 - Created a serverless task with 3rd Party APIs in ruby.
 
-### Requirements
-- Install Node.js and npm: Serverless Framework requires Node.js and npm to be installed on your machine. You can download and install them from the official Node.js website: https://nodejs.org/
+## Installation and Setup
 
-- Install Serverless Framework: Once you have Node.js and npm installed, you can install the Serverless Framework globally using npm:
+1. **Node.js and npm:**
+   Ensure you have Node.js and npm installed on your machine. You can download and install them from the [official Node.js website](https://nodejs.org/).
+
+2. **Install Serverless Framework:**
+   After installing Node.js and npm, install the Serverless Framework globally using npm:
+
+   ```bash
+   npm install -g serverless
