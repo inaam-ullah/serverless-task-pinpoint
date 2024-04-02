@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 require 'httparty'
+require_relative '../../helpers/webhook_helpers'
 
 module HiBob
   class HiBobService
     include HTTParty
+    include WebhookHelpers
 
     base_uri 'https://api.hibob.com/v1'
 
