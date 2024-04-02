@@ -10,7 +10,6 @@
 /test/version_tmp/
 /tmp/
 .env
-event.json
 /vendor
 
 # Used by dotenv library to load environment variables.
