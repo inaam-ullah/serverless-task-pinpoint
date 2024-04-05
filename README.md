@@ -14,13 +14,11 @@
    ```bash
    npm install -g serverless
    ```
-
 ## Create a New Serverless Project:
 
 ```bash
 serverless create --template aws-ruby --path my_serverless_project
 ```
-
 **Note:** Add path according to the Requirements
 
 ## Configure AWS credentials 
@@ -38,20 +36,3 @@ serverless deploy
 ```
 
 **Note:** You can also use Sam-cli
-
-## For Testing of your Lambda function
-
-```bash
-serverless invoke --function function_name
-```
-
-## For locally Testing
-
-```bash 
-serverless invoke local -f webhook_handler --path event.json
-```
-
-**Note:** When you are deploy manually you have to create a vendor/bundle folder for dependencies.
-```bash
-bundle install --path vendor/bundle
-```
