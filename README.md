@@ -20,3 +20,19 @@
 serverless create --template aws-ruby --path my_serverless_project
 ```
 **Note:** Add path according to the Requirements
+
+## Configure AWS credentials 
+
+```bash
+serverless config credentials --provider aws --key YOUR_ACCESS_KEY --secret YOUR_SECRET_KEY
+```
+
+## Deployment
+
+If you want to deploy your function and all your credentials are set then you can simple do:
+
+```bash
+serverless deploy
+```
+
+**Note:** You can also use Sam-cli
